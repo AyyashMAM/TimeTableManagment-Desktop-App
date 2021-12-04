@@ -1,0 +1,26 @@
+#---- Default SonarQube server
+#sonar.host.url=http://localhost:9000
+
+#---- PostgreSQL
+#sonar.jdbc.url=jdbc:postgresql://localhost/sonar
+
+#---- MYSQL
+#sonar.jdbc.url=jdbc:mysql://localhost:3306/sonar?useUnicode=true&amp;characterEncoding=utf8
+
+#---- oracle
+#sonar.jdbc.url=jdbc:oracle:thin:@localhost/XE
+
+#---- Microsoft SQLServer
+#sonar.jdbc.url=jdbc:jtds:sqlserver://localhost/sonar;SelectMethod=Cursor
+
+#---- Global database settings
+#sonar.jdbc.username=sonar
+#sonar.jdbc.password=sonar
+
+sonar.projectKey=TimeTable_Managment
+sonar.projectName=TimeTable_Managment
+sonar.projectVersion=1.0
+
+sonar.sources = C:/Users/Mohamed Ayyash/Desktop/ITPM-Ellite/TimeTable_Managment/src/timetable_managment
+
+sonar-scanner.bat -D"sonar.projectKey=TimeTable_Managment" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=a7b3daef996a9f91d1e035152478de8c66fcf719"
